@@ -1,0 +1,127 @@
+/* Stylesheet for Sini General Trading Website */
+
+:root {
+  --brand: #0b66ff;
+  --dark: #222;
+  --light: #f2f7ff;
+  --muted: #555;
+  --border: #e5e5e5;
+  --max-width: 1100px;
+}
+
+body {
+  font-family: system-ui, Arial, sans-serif;
+  margin: 0;
+  color: var(--dark);
+  line-height: 1.6;
+  background: #fff;
+}
+
+/* -------------------- HEADER -------------------- */
+header {
+  background: var(--brand);
+  padding: 16px 0;
+  color: #fff;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: var(--max-width);
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 500;
+}
+
+/* -------------------- HERO SECTION -------------------- */
+.hero {
+  background: var(--light);
+  text-align: center;
+  padding: 70px 20px;
+}
+
+.hero h1 {
+  font-size: 34px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  color: var(--muted);
+  max-width: 700px;
+  margin: auto;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 20px;
+  background: var(--brand);
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* -------------------- SECTIONS -------------------- */
+.section {
+  padding: 60px 20px;
+  max-width: var(--max-width);
+  margin: auto;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+/* -------------------- SERVICES -------------------- */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid var(--border);
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+/* -------------------- CONTACT -------------------- */
+#contact p {
+  font-size: 17px;
+}
+
+/* -------------------- FOOTER -------------------- */
+footer {
+  background: #fafafa;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  color: #666;
+  border-top: 1px solid #eee;
+}
+
+/* -------------------- RESPONSIVE -------------------- */
+@media (max-width: 600px) {
+  nav {
+    display: none;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+}
